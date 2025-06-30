@@ -1,0 +1,53 @@
+# Data directories
+data/
+**/data/
+
+# Build directories
+**/build/
+**/install/
+**/target/
+
+# Log files
+**/log/
+*.log
+
+# System files
+.DS_Store
+*.DS_Store
+
+# Cargo/Rust related
+*.cargo
+Cargo.lock
+
+# Executable files
+*.exe
+*.out
+
+# Compiled object files
+*.o
+*.obj
+*.a
+*.so
+*.dylib
+
+# Python related
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+*.egg-info/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
