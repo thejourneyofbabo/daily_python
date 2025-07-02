@@ -9,6 +9,7 @@ from torch.utils.data import Dataset
 from torchvision.io import decode_image
 from torchvision.transforms import ToTensor
 from torchvision import datasets
+from torch.utils.data import DataLoader
 
 training_data = datasets.FashionMNIST(
     root="data", train=True, download=True, transform=ToTensor()
@@ -41,8 +42,6 @@ class CustomImageDataset(Dataset):
             label = self.target_transform(label)
         return image, label
 
-
-from torch.utils.data import DataLoader
 
 train_dataloader = DataLoader(training_data, batch_size=64, shuffle=True)
 test_dataloader = DataLoader(test_data, batch_size=64, shuffle=True)
