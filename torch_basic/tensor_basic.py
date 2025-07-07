@@ -3,7 +3,7 @@
 # Similar to `NumPy's` nddarays.
 # Tensors can run on GPUs or other hardware accelerators.
 
-from numpy._core.numeric import zeros
+from numpy.core.numeric import zeros
 import torch
 import numpy as np
 
